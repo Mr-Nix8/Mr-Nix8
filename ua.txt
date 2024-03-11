@@ -1,1 +1,8 @@
-"[FBAN/Orca-Android;FBAV/"+omp+".0.0.25."+omp+";FBPN/com.facebook.orca;FBLC/en_US;FBBV/"+rdp+";FBCR/Verizon ;FBMF/motorola;FBBD/motorola;FBDV/moto g play - 2023;FBSV/12;FBCA/armeabi-v7a:armeabi;FBDM/{density=1.75,width=720,height=1439};FB_FW/1;]"
+facebook_version = f"{random.randint(100, 450)}.{random.randint(0, 0)}.{random.randint(0, 0)}.{random.randint(1, 40)}.{random.randint(10, 150)}"
+	fbbv = str(random.randint(10000000, 66666666))
+	fbrv = str(random.randint(000000000,999999999))
+	density = random.choice(['2.0'])
+	width = random.choice(["720"])
+	height = random.choice(["1344"])
+	ua = f"[FBAN/FB4A;FBAV/{str(facebook_version)};FBBV/{str(fbbv)};[FBAN/FB4A;FBAV/{str(facebook_version)};FBBV/{str(fbbv)};FBDM/{{density={density},width={width},height={height}}};FBLC/en_US;FBRV/{str(fbrv)};FBCR/MTN-CG;FBMF/motorola;FBBD/motorola;FBPN/com.facebook.katana;FBDV/moto e6;FBSV/9;FBOP/1;FBCA/armeabi-v7a:]"
+	return ua
